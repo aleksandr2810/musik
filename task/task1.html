@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>musik1</title>
+</head>
+<style>
+	body {
+		background: url(../img/m1.jpg) 0 0/cover no-repeat;
+	}
+
+	h1 {
+		font-size: 100px;
+		text-align: center;
+		color: gold;
+	}
+
+	div {
+		margin-top: 10rem;
+		text-align: center;
+	}
+
+	button {
+		min-width: 250px;
+		height: 70px;
+		font-size: 30px;
+		background-color: rgb(237, 201, 124);
+		border-radius: 5px;
+	}
+</style>
+<script>
+
+	window.onload = function () {
+		const arr = ['Хочеш', 'закрутити', 'мене', 'як', 'бігуді']
+		const btn1 = document.getElementById('one')
+		const btn2 = document.getElementById('two')
+		const btn3 = document.getElementById('three')
+		const btn4 = document.getElementById('four')
+		const btn5 = document.getElementById('five')
+
+		btn1.onclick = function () {
+			btn1.innerText = arr[0]
+			btn1.style.color = 'green'
+			btn1.style.fontWeight = '700'
+		}
+		btn2.onclick = function () {
+			btn2.innerText = arr[1]
+			btn2.style.color = 'green'
+			btn2.style.fontWeight = '700'
+		}
+		btn3.onclick = function () {
+			btn3.innerText = arr[2]
+			btn3.style.color = 'green'
+			btn3.style.fontWeight = '700'
+		}
+		btn4.onclick = function () {
+			btn4.innerText = arr[3]
+			btn4.style.color = 'green'
+			btn4.style.fontWeight = '700'
+		}
+		btn5.onclick = function () {
+			btn5.innerText = arr[4]
+			btn5.style.color = 'green'
+			btn5.style.fontWeight = '700'
+		}
+	}
+</script>
+
+<body>
+	<h1>Вгадай мелодію 1</h1>
+	<div>
+		<button id="one">Слово 1</button>
+		<button id="two">Слово 2</button>
+		<button id="three">Слово 3</button>
+		<button id="four">Слово 4</button>
+		<button id="five">Слово 5</button>
+	</div>
+</body>
+
+
+
+</html>
